@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[Título del Tema Asignado]</title>
+    <title>Concurrencia:Sincronización y Bloqueos Mutuamente Excluyentes</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
 </head>
@@ -17,15 +17,15 @@
         <h1 class="m-0">Unidad Curricular: Sistemas Operativos</h1>
         <h2 class="m-0">Profesor: Lic. Ransés Jiménez</h2>
         <hr>
-        <h2>[Título del Tema Asignado]</h2>
+        <h2>Concurrencia:Sincronización y Bloqueos Mutuamente Excluyentes</h2>
     </header>
 
     <main class="card">
-        <h3>[Subtítulo o descripción breve del punto a investigar]</h3>
+        <h3>Cómo la CPU maneja muchos procesos a la vez</h3>
         
         <p>
-            <strong>Estudiante:</strong> [Tu Nombre y Apellido] (C.I: [Tu Cédula])<br>
-            <strong>Correo en Classroom:</strong> [Tu Correo en classroom]
+            <strong>Estudiante:</strong> Carlos Burgos (C.I: 31.944.322)<br>
+            <strong>Correo en Classroom:</strong> caloburgos0208@gmail.com
         </p>
         <hr style="border: 1px solid #eee; margin-bottom: 20px;">
 
@@ -33,14 +33,14 @@
 
         <h4>Conceptos clave:</h4>
         <ul>
-            <li>[Punto importante 1...]</li>
-            <li>[Punto importante 2...]</li>
-            <li>[Punto importante 3...]</li>
+            <li> <strong>El problema de la sección crítica y condiciones de carrera.</strong> Ocurre cuando varios procesos o hilos intentan acceder al mismo recurso compartido al mismo tiempo. Si no existe control, los resultados pueden ser incorrectos debido a las llamadas condiciones de carrera. </li>
+            <li><strong>Mecanismos de sincronización: Semáforos y mutex.</strong> Los semáforos y mutex son herramientas que permiten coordinar el acceso a recursos compartidos. Su función es evitar conflictos y garantizar que los procesos trabajen de forma ordenada y segura. </li>
+            <li><strong>El problema del interbloqueo (Deadlock o abrazo mortal): Condiciones para que ocurra y cómo prevenirlo o detectarlo.</strong> El interbloqueo ocurre cuando dos o más procesos quedan esperando recursos que están siendo utilizados por otros procesos, impidiendo que continúen su ejecución. Puede prevenirse mediante una correcta asignación de recursos o detectarse mediante algoritmos del sistema operativo. </li>
         </ul>
 
-        <p>[Conclusión o resumen final de tu investigación...]</p>
+        <p>La sincronización es fundamental en los sistemas operativos modernos porque permite que múltiples procesos compartan recursos de manera segura. El uso de semáforos y mutex ayuda a evitar errores, mientras que la prevención de interbloqueos mejora la estabilidad y eficiencia del sistema.</p>
 
-        <!-- AQUI DEBE IR UN BOTON DE RETORNO AL INDEX PRINCIPAL -->
+        <a href="../index.html" class="btn-back">↩ Volver al Catálogo Principal</a>
     </main>
 </div>
 
