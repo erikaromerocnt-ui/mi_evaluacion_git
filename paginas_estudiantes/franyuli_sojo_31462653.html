@@ -29,16 +29,17 @@
         </p>
         <hr style="border: 1px solid #eee; margin-bottom: 20px;">
 
-        <p>[Escribe aquí la introducción a tu investigación...]</p>
+        <p>En los sistemas operativos modernos, la concurrencia permite que múltiples hilos o procesos se ejecuten simultáneamente, compartiendo recursos como la memoria o variables globales. Sin embargo, si dos procesos intentan modificar el mismo recurso al mismo tiempo, se produce una condición de carrera (race condition), generando datos corruptos o comportamientos impredecibles. Para evitar esto, es fundamental la sincronización, un conjunto de mecanismos que coordinan el acceso ordenado de los procesos a los recursos compartidos.</p>
 
         <h4>Conceptos clave:</h4>
         <ul>
-            <li>[Punto importante 1...]</li>
-            <li>[Punto importante 2...]</li>
-            <li>[Punto importante 3...]</li>
+            <li><strong>Región Crítica:</strong> Es la parte del código de un programa donde se accede a un recurso compartido. La regla de oro en los sistemas operativos es que solo un proceso puede estar dentro de su región crítica a la vez.</li>
+<li><strong>Exclusión Mutua (Mutex):</strong> Es un mecanismo de sincronización que actúa como un "candado". Cuando un hilo quiere entrar a una región crítica, debe adquirir el Mutex (bloquearlo); si otro hilo intenta entrar, tendrá que esperar hasta que el primero libere el candado (desbloquear).</li>
+<li><strong>Condición de Carrera:</strong> Ocurre cuando el resultado final de la ejecución de múltiples hilos depende del orden exacto en que se ejecutan, lo que puede causar fallas catastróficas en el software si no se controla adecuadamente.</li>
+<li><strong>Interbloqueo (Deadlock):</strong> Es un problema grave que ocurre cuando dos o más hilos se bloquean mutuamente de forma indefinida, esperando por un recurso que el otro tiene retenido. El sistema operativo debe implementar estrategias para prevenir o resolver estas situaciones.</li>
         </ul>
 
-        <p>[Conclusión o resumen final de tu investigación...]</p>
+        <p>En conclusión, la gestión de la concurrencia es uno de los mayores desafíos en el diseño de sistemas operativos y aplicaciones multiproceso. El uso correcto de herramientas de sincronización como los bloqueos mutuamente excluyentes (Mutex) garantiza la integridad de los datos y la consistencia del sistema, permitiendo aprovechar al máximo la potencia de los procesadores multinúcleo sin caer en condiciones de carrera o interbloqueos.</p>
 
         <!-- AQUI DEBE IR UN BOTON DE RETORNO AL INDEX PRINCIPAL -->
     </main>
